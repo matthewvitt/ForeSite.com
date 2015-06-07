@@ -1,0 +1,17 @@
+<h1> "Make a Teetime"</h1>
+
+<%= form_for @teetime do |f|%>
+
+
+    <p>
+      <%= f.label :date %><br />
+      <%= f.text_field :date %>
+    </p>
+    <p>
+      <%= f.label :course %><br/>
+      <%= f.text_field :course %>
+    </p>
+    <p>
+      <%= f.submit "Make a Teetime" %>
+    </p>
+<%end%>

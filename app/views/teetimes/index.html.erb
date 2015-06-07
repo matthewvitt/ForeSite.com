@@ -1,0 +1,14 @@
+<h1>FORESITE</h1>
+<p><%= link_to "Make a teetime", new_teetime_path %></p>
+<% @teetimes.each do |teetime| %>
+    <h2><%=link_to teetime.date, teetime %></h2>
+    <p><%=teetime.course%></p>
+    <p>
+      <%= link_to "Change Teetime", edit_teetime_path(teetime)%> |
+      <type="button" class="btn btn-danger"><%= link_to "Cancel Teetime", teetime, :confirm => "Really?", :method => :delete %></button>
+    </p>
+
+    <hr />
+<%end%>
+
+<p><%= link_to "Make a teetime", new_teetime_path %></p>

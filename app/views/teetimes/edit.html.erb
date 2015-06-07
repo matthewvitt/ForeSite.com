@@ -1,0 +1,19 @@
+<h1>CHANGE TEE TIME</h1>
+
+
+<%= form_for @teetime do |f| %>
+    <p>
+      <%= f.label :date %>
+      <%= f.text_field :date%>
+    </p>
+
+    <p>
+      <%= f.label :course %>
+      <%= f.text_field :course%>
+    </p>
+
+
+    <p>
+      <%= f.submit "Teetime Update" %>
+    </p>
+<%end%>
