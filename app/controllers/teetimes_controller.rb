@@ -1,25 +1,26 @@
 class TeetimesController < ApplicationController
 
     before_filter :authorize
-
+# only signed in users can get to the /teetimes aspect of the sight
 
     def index
       @teetimes = Teetime.all
     end
-
+# any teetime successfully made will be shoed in the index view
     def show
       @teetime = Teetime.find(params[:id])
-
+# any distinct teetime can be individually displayed
     end
 
     def new
       @teetime = Teetime.new
     end
-
+# you can make a new teetime that will be connected to index
+#   can't create anythting without it being new
     def create
       @teetime = Teetime.new(teetime_params)
 
-
+# when a teetime is created it will display on the index
       if @teetime.save
         redirect_to teetimes_path, :alert => "Teetime made"
       else
@@ -49,7 +50,7 @@ class TeetimesController < ApplicationController
       redirect_to teetimes_path
 
     end
-
+# params are a pain  this makes them easier
     private
     def teetime_params
       params.require(:teetime).permit(:date, :course)

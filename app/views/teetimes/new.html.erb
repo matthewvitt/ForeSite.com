@@ -1,48 +1,48 @@
 <h1> "Make a Teetime"</h1>
 
 <%= form_for @teetime do |f|%>
+<h2>Please write the date and time you want to find a golf partner</h2>
 
-
-    <p>
-    <div class="container">
-      <div class="row">
-        <div class='col-sm-6'>
-          <div class="form-group">
-            <div class='input-group date' id='datetimepicker1'>
-              <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-            </div>
-          </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-      </div>
-    </div>
+    <!--<p>-->
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--<div class='col-sm-6'>-->
+          <!--<div class="form-group">-->
+            <!--<div class='input-group date' id='datetimepicker1'>-->
+              <!--<input type='text' class="form-control" />-->
+                    <!--<span class="input-group-addon">-->
+                        <!--<span class="glyphicon glyphicon-calendar"></span>-->
+                    <!--</span>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<script type="text/javascript">-->
+<!--//            $(function () {-->
+<!--//                $('#datetimepicker1').datetimepicker();-->
+<!--//            });-->
+        <!--</script>-->
+      <!--</div>-->
+    <!--</div>-->
       <%= f.label :date %><br />
       <%= f.text_field :date %>
     </p>
     <!-- Single button -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-        Action <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#">WESTSIDE GC</a></li>
-        <li><a href="#">EASTSIDE </a></li>
-        <li><a href="#">NORTHSIDE- SOUTH COURSE</a></li>
-        <li><a href="#">TONE LOC NATIONAL GC</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-      </ul>
-    </div>
+    <!--<div class="btn-group">-->
+      <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">-->
+        <!--Action <span class="caret"></span>-->
+      <!--</button>-->
+      <!--<ul class="dropdown-menu" role="menu">-->
+        <!--<li><a href="#">WESTSIDE GC</a></li>-->
+        <!--<li><a href="#">EASTSIDE </a></li>-->
+        <!--<li><a href="#">NORTHSIDE- SOUTH COURSE</a></li>-->
+        <!--<li><a href="#">TONE LOC NATIONAL GC</a></li>-->
+        <!--<li class="divider"></li>-->
+        <!--<li><a href="#">Separated link</a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
 
 
-
+    <h2> Type the name of the course you want to play</h2>
 
     <p>
       <%= f.label :course %><br/>
@@ -51,4 +51,5 @@
     <p>
       <%= f.submit "Make a Teetime" %>
     </p>
+<!--where the fun of the site should be  I failed at that-->
 <%end%>

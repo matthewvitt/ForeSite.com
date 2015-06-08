@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div id="user_header">
   <% if current_user %>
       Logged in as <%= current_user.email %> <br />
@@ -16,6 +17,8 @@
       <%= link_to "Sign Up", signup_path %> <br />
       <%= link_to "Log In", login_path %>
   <% end %>
+  <!--above puts access credentials throughout site-->
+
 </div>
 <% flash.each do |key, value| %>
     <%= content_tag(:div, class: "alert alert-#{key}") do %>
