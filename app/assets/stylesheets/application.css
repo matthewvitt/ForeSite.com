@@ -16,7 +16,7 @@
 
 body{
     margin:0px;
-    background:#000;
+    background:#BBBBBB;
 }
 .header-cont {
     width:100%;
@@ -25,7 +25,7 @@ body{
 }
 .header {
     height:50px;
-    background:#F0F0F0;
+    background:blue;
     border:1px solid #CCC;
     width:960px;
     margin:0px auto;
