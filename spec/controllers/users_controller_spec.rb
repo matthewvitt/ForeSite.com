@@ -22,10 +22,10 @@ RSpec.describe UsersController, :type => :controller do
 
     expect(response).to redirect_to '/teetimes'
   end
-
-  it "redirects an invalid user" do
-  post :create,user: FactoryGirl.attributes_for(:invalid_user)
-    expect(response).to redirect_to '/signup'
-  end
+  #
+  # it "redirects an invalid user" do
+  # post :create,user: FactoryGirl.attributes_for(:invalid_user)
+  #   expect(response).to redirect_to '/signup'
+  # end
 end
 
