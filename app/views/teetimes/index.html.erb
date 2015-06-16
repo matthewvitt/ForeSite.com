@@ -3,7 +3,7 @@
 <!--all teetimes are listed and making a teetime is a click away-->
 <% @teetimes.each do |teetime| %>
     <h2><%=link_to teetime.date, teetime %></h2>
-    <p><%=teetime.course%></p>
+    <h2><p><%=teetime.course%></p></h2>
     <p>
       <%= link_to "Change Teetime", edit_teetime_path(teetime)%> |
      <%= link_to "Cancel Teetime", teetime, :confirm => "Really?", :method => :delete %>

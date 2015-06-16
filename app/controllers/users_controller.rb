@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-
+   @user = User.new
   end
 # if a user succeeds in logging in he can have access through the sight
   def create
