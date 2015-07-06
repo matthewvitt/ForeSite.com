@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def new
    @user = User.new
   end
-# if a user succeeds in logging in he can have access through the sight
+# if a user succeeds in logging in he can have access throughout the sight
   def create
     user = User.new(user_params)
     if user.save
