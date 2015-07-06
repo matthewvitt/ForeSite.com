@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+# model tests
 RSpec.describe User, :type => :model do
 
   context "email" do

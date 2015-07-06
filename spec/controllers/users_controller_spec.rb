@@ -1,9 +1,9 @@
 require 'rails_helper'
-
+# testing of controller actions
 RSpec.describe UsersController, :type => :controller do
   #render_views
 
-  it "return the register form in the new view" do
+  it "returns the register form in the new view" do
 
     get :new
 

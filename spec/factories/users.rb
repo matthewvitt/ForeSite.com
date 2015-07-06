@@ -2,6 +2,7 @@ FactoryGirl.define do
 factory :user do
 
 ##GENERAL
+# validity of user id and passwords
 
     factory :valid_user, class: User do
 

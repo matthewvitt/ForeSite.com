@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+# login tests
 RSpec.describe "Login", :type => :feature do
   describe "loggin a user in" do
     it "logs in a user and redirects to users path" do
