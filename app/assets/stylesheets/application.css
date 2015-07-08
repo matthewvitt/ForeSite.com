@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+
  */
 
 body{
@@ -32,7 +33,7 @@ body{
 }
 .content {
     width:960px;
-    background: #blue;
+    background: goldenrod;
     border: 1px solid #CCC;
     height: 2000px;
     margin: 70px auto;

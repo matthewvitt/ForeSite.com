@@ -3,26 +3,26 @@
 <%= form_for @teetime do |f|%>
 <h3>Please write the date and time you want to find a golf partner</h3>
 
-    <!--<p>-->
-    <!--<div class="container">-->
-      <!--<div class="row">-->
-        <!--<div class='col-sm-6'>-->
-          <!--<div class="form-group">-->
-            <!--<div class='input-group date' id='datetimepicker1'>-->
-              <!--<input type='text' class="form-control" />-->
-                    <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span>-->
-                    <!--</span>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<script type="text/javascript">-->
-<!--//            $(function () {-->
-<!--//                $('#datetimepicker1').datetimepicker();-->
-<!--//            });-->
-        <!--</script>-->
-      <!--</div>-->
-    <!--</div>-->
+    <p>
+    <div class="container">
+      <div class="row">
+        <div class='col-sm-6'>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker1'>
+              <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+           $(function () {
+                $('#datetimepicker1').datetimepicker();
+});
+        </script>
+      </div>
+    </div>
       <%= f.label :date %><br />
       <%= f.text_field :date %>
     </p>
@@ -40,7 +40,18 @@
         <!--<li><a href="#">Separated link</a></li>-->
       <!--</ul>-->
     <!--</div>-->
-
+    <!--<div class="dropdown">-->
+      <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+       <!--Courses-->
+        <!--<span class="caret"></span>-->
+      <!--</button>-->
+      <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+        <!--<li><a href="#">west</a></li>-->
+        <!--<li><a href="#">newtown</a></li>-->
+        <!--<li><a href="#"> valletbrook</a></li>-->
+        <!--<li><a href="#"> wedgewood</a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
 
     <h3> Type the name of the course you want to play</h3>
 
@@ -51,5 +62,6 @@
     <p>
       <%= f.submit "Make a Teetime" %>
     </p>
+
 <!--where the fun of the site should be  I failed at that-->
 <%end%>
