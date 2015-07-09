@@ -3,9 +3,14 @@
 <%= form_for :user, url: '/users' do |f| %>
 
     Name: <%= f.text_field :name %>
-    Email: <%= f.text_field :email %>
+    Handicap: <%= f.text_field :handicap %>
+    Email: <%= f.text_field :email %><br>
+    </br>
     Password: <%= f.password_field :password %>
     Password Confirmation: <%= f.password_field :password_confirmation %>
+    </br>
+    </br>
+
     <%= f.submit "Get Golfin" %>
 
 <% end %>

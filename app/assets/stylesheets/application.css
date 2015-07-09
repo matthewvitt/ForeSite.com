@@ -15,7 +15,12 @@
 
  */
 
+
+/*head{*/
+    /*font-family: 'Cinzel', serif;*/
+/*}*/
 body{
+    font-family: 'Cinzel', serif;
     margin:0px;
     background:#BBBBBB;
 }
@@ -26,7 +31,7 @@ body{
 }
 .header {
     height:50px;
-    background:blue;
+    background:red;
     border:1px solid #CCC;
     width:960px;
     margin:0px auto;
@@ -35,7 +40,18 @@ body{
     width:960px;
     background: goldenrod;
     border: 1px solid #CCC;
-    height: 2000px;
+    height: 200px;
     margin: 70px auto;
 }
 
+.container {
+    width: 500px;
+    background: blue;
+    border: 1px solid green;
+    height: 300px;
+    margin: 70px auto;
+}
+
+.text-left {
+    text-shadow: 1px 1px black;
+}
