@@ -3,4 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import 'bootstrap';
-@import 'bootstrap-datetimepicker';
+
+
+#TTlink {
+
+  font-size: 40px;
+}
+
+p {
+  font-style: bold;
+
+}
+
+.container {
+  border-style: dashed;
+  text-decoration: underline;
+  margin: absolute;
+  padding:2px;
+
+}
