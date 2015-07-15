@@ -12,46 +12,53 @@
  *
  *= require_tree .
  *= require_self
+*= require bootstrap
+*= require bootstrap-datetimepicker
+*= require bootstrap-timepicker
 
  */
 
 
-/*head{*/
-    /*font-family: 'Cinzel', serif;*/
-/*}*/
+
+
+
 body{
     font-family: 'Cinzel', serif;
-    margin:0px;
-    background:#BBBBBB;
+    /*font-family: 'Cinzel', serif;*/
+    margin:10px;
+    background:aliceblue;
 }
-.header-cont {
-    width:100%;
-    position:fixed;
-    top:0px;
-}
-.header {
-    height:50px;
-    background:red;
-    border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
-}
+/*.logo_img {*/
+    /*content:url('assets/images/hole.jpg');*/
+    /*float: right;*/
+/*}*/
+/*.header {*/
+    /*font-family: 'Cinzel', serif;*/
+    /*height:125px;*/
+    /*background:green;*/
+    /*border:1px solid greenyellow;*/
+    /*width:auto;*/
+    /*margin:10px auto;*/
+    /*padding: 10px;*/
+    /*/!*background-image: url('assets/images/hole.jpg');*!/*/
+/*}*/
+
 .content {
     width:960px;
-    background: goldenrod;
+    background: aliceblue;
     border: 1px solid #CCC;
     height: 200px;
     margin: 70px auto;
 }
 
-.container {
-    width: 500px;
-    background: blue;
-    border: 1px solid green;
-    height: 300px;
-    margin: 70px auto;
-}
+/*.container {*/
+    /*width: 500px;*/
+    /*background: blue;*/
+    /*border: 1px solid green;*/
+    /*height: 300px;*/
+    /*margin: 70px auto;*/
+/*}*/
 
-.text-left {
-    text-shadow: 1px 1px black;
+.navbar-brand {
+    font-size: 45px;
 }
