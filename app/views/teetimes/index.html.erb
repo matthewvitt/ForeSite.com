@@ -1,15 +1,54 @@
-<h1>ForeSite</h1>
-<p><%= link_to "Make a teetime", new_teetime_path %></p>
-<!--all teetimes are listed and making a teetime is a click away-->
-<% @teetimes.each do |teetime| %>
-    <h2><%=link_to teetime.date, teetime %></h2>
-    <h2><p><%=teetime.course%></p></h2>
-    <p>
-      <%= link_to "Change Teetime", edit_teetime_path(teetime)%> |
-     <%= link_to "Cancel Teetime", teetime, :confirm => "Really?", :method => :delete %>
-    </p>
-<!--still reading these comments?-->
-    <hr />
-<%end%>
 
-<p><%= link_to "Make a teetime", new_teetime_path %></p>
+
+<!--all teetimes are listed and making a teetime is a click away-->
+
+  <h1>People Looking for Someone to Play With</h1>
+    <!--<img src=url("/Old-Course-St-Andrews-Links-Trust-2-960x390.jpg") alt="St.Andrews">-->
+  <div class="container-fluid">
+
+      <% @teetimes.each do |teetime| %>
+            <h4>Name: <%= teetime.user.name%></h4>
+            <h4>Email: <%= teetime.user.email %></h4>
+             <h4>Handicap: <%= teetime.user.handicap %></h4>
+
+            <h4>Date: <%=teetime.date %></h4>
+            <h4>Teetime: <%=teetime.time %></h4>
+            <h4>Course: <%=teetime.course%></h4>
+        <p>
+          <%= link_to "Show Teetime", teetime %> |
+          <%= link_to "Change Teetime", edit_teetime_path(teetime)%>
+        </p>
+        <hr />
+      <%end%>
+
+  </div>
+  <!--<hr>-->
+
+
+
+  <!--<div ng-app="teetimesApp">-->
+  <!--<div ng-controller="TeeTimesController as teetimes" ng-init="teetimes.getTeetimes()">-->
+    <!--&lt;!&ndash;{{teetimes.Teetimes}}&ndash;&gt;-->
+
+    <!--<body>-->
+    <!--<ul>-->
+      <!--<h2>Available Teetimes</h2>-->
+      <!--<li-->
+      <!--class="list-unstyled"-->
+      <!--ng-repeat="teetime in teetimes.Teetimes"-->
+
+      <!--ng-controller="TeetimesController"-->
+      <!--id="container">-->
+
+
+            <!--<span class="name">-->
+
+             <!--<h3>   {{ teetime.user.name}}:-->
+                <!--{{ teetime.date }}</h3>-->
+                <!--{{ teetime.time }}</h3>-->
+                <!--{{ teetime.course }}</h3>-->
+  <!--</span>-->
+
+      <!--</li>-->
+
+    <!--</ul>-->

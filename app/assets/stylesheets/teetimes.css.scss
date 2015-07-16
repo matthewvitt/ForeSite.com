@@ -3,4 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import 'bootstrap';
-@import 'bootstrap-datetimepicker';
+
+
+.new_teetime{
+  //background-image: url('St.Andrews.jpg') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  float: left;
+  font-size: 20px;
+  width: 500px;
+  border: 1px solid green;
+  height: auto;
+  margin: 70px auto;
+}
+
+.Teetimes {
+  float: left;
+  font-size: 20px;
+  width: 450px;
+  border: 1px solid green;
+  height: auto;
+  margin: 70px auto;
+  background-color: rgba(0,0,0,0.6);
+}
+h1{
+  color:aliceblue;
+}
+h3{
+  color: aliceblue;
+}
+
+h4{
+  color:aliceblue;
+}
+//
+//.container {
+//  border-style: dashed;
+//  text-decoration: underline;
+//  margin: absolute;
+//  padding:2px;
+//
+//}

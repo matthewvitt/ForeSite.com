@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-
+    @user = User.new
   end
 
 # create a user and directly login if positive
@@ -17,6 +17,11 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     redirect_to '/login'
+  end
+
+
+  def user_params
+    params.require(:user).permit(:email, :password)
   end
   # associated with the logout and will show you the login screen
 end

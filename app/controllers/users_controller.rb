@@ -16,6 +16,6 @@ class UsersController < ApplicationController
   private
 # user_params defined. only a certified user can make a teetime
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :handicap, :password, :password_confirmation)
   end
 end

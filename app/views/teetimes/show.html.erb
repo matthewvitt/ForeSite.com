@@ -1,8 +1,15 @@
 <container class="Teetimes">
-<h1><%= @teetime.date %></h1>
-<p><%= @teetime.course %></p>
+  <h3>Players Name: <%= @teetime.user.name %></h3>
+  <h3><%=@teetime.user.name%>'s Contact: <%= @teetime.user.email %></h3>
+  <h3><%=@teetime.user.name%>'s Handicap: <%= @teetime.user.handicap %></h3>
 
-<%= link_to "Back to listing",teetimes_path %>
+    <h3><%= @teetime.date %></h3>
+    <h3><%= @teetime.time %></h3>
+    <h3><%= @teetime.course %></h3>
 
+    <%= link_to "Back to listing",teetimes_path %>|
+    <%= link_to "Cancel Teetime", @teetime, method: :delete, data: { confirm: "Do you really want to delete this????"} %>
+  <br>
+  <%= link_to"send an email", teetimes_path %>
 </container>
-<!--shows the teetimes made-->
+<!--shows the teetime made-->

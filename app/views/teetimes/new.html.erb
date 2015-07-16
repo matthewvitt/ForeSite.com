@@ -1,33 +1,47 @@
-<h1> "Make a Teetime"</h1>
+<div class="new_teetime">
+<h1> Make a Teetime</h1>
 
-<%= form_for @teetime do |f|%>
+
 <h3>Please write the date and time you want to find a golf partner</h3>
 
-      <%= f.label :date %><br />
-      <%= f.text_field :date %>
-    </p>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script>
-        $(function() {
-            $( "#datepicker" ).datepicker();
-        });
-    </script>
-    </head>
-    <body>
+
+
+
+
+    <%= form_for @teetime do |f|%>
+        <%= f.label :date %>
+        <%= f.text_field :date, id: "datepicker" %>
+        <%= f.label :time %>
+        <%= f.text_field :time %>
+<br>
 
 
     <h3> Type the name of the course you want to play</h3>
 
     <p>
-      <%= f.label :course %><br/>
-      <%= f.text_field :course %>
+        <%= f.label :course %><br/>
+      <%= f.collection_select :course, Teetime::COURSES, :to_s, :to_s,
+                              :include_blank => true%>
+
     </p>
     <p>
-      <%= f.submit "Make a Teetime" %>
+
+        <%= f.submit "Make a Teetime" %>
     </p>
+        <%= link_to "Back to listing",teetimes_path %>
+
 
 <!--where the fun of the site should be  I failed at that-->
 <%end%>
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker({format: 'mm/dd/yyyy'});
+
+    });
+
+//   $(function() {
+//        $( "#timepicker" ).timepicker();
+//    });
+</script>
+</div>
+<!--var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();-->

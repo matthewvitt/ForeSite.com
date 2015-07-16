@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
-root 'users#new'
+root :to => 'teetimes#landing_page'
   get '/signup' => 'users#new', as: :signup
   post '/users' => 'users#create'
   # Example of regular route:

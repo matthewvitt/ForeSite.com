@@ -17,18 +17,30 @@ class TeetimesController < ApplicationController
     end
 # you can make a new teetime that will be connected to index
 #   can't create anythting without it being new
-    def create
-      @teetime = Teetime.new(teetime_params)
+#     def create
+#       @teetime = Teetime.new(teetime_params)
+#
+# # when a teetime is created it will display on the index
+#       if @teetime.save
+#         redirect_to teetimes_path, :alert => "Teetime made"
+#       else
+#         render "new"
+#       end
+#     end
 
-# when a teetime is created it will display on the index
-      if @teetime.save
-        redirect_to teetimes_path, :alert => "Teetime made"
-      else
-        render "new"
-      end
+  def create
+    teetime = Teetime.new(teetime_params)
+    if teetime.valid?
+      current_user.teetimes.push teetime
+      current_user.save
+      redirect_to teetimes_path
+    else
+      flash["alert-warning"] = "Sorry, teetime not created"
+      redirect_to new_teetime_path
     end
+  end
 
-    def edit
+  def edit
       @teetime = Teetime.find(params[:id])
 
     end
@@ -46,15 +58,15 @@ class TeetimesController < ApplicationController
     def destroy
       @teetime = Teetime.find(params[:id])
       @teetime.destroy
-
       redirect_to teetimes_path
 
     end
 # params are a pain  this makes them easier
     private
     def teetime_params
-      params.require(:teetime).permit(:date, :course)
+      params.require(:teetime).permit(:date, :time, :course)
     end
 
-
+def landing_page
+end
 end
