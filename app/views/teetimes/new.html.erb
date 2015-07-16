@@ -1,14 +1,10 @@
-<div class="new_teetime">
+<section id="teetime-new">
 <h1> Make a Teetime</h1>
 
 
-<h3>Please write the date and time you want to find a golf partner</h3>
+<h3>When do you want to play?</h3>
 
-
-
-
-
-    <%= form_for @teetime do |f|%>
+  <%= form_for @teetime do |f|%>
         <%= f.label :date %>
         <%= f.text_field :date, id: "datepicker" %>
         <%= f.label :time %>
@@ -16,32 +12,27 @@
 <br>
 
 
-    <h3> Type the name of the course you want to play</h3>
+    <h3> Participating Courses</h3>
 
     <p>
-        <%= f.label :course %><br/>
-      <%= f.collection_select :course, Teetime::COURSES, :to_s, :to_s,
+            <%= f.label :course %><br/>
+            <%= f.collection_select :course, Teetime::COURSES, :to_s, :to_s,
                               :include_blank => true%>
 
     </p>
     <p>
-
-        <%= f.submit "Make a Teetime" %>
+      <%= f.submit "Make a Teetime" %>
     </p>
-        <%= link_to "Back to listing",teetimes_path %>
+      <%= link_to "Back to listing",teetimes_path %>
 
-
-<!--where the fun of the site should be  I failed at that-->
 <%end%>
-<script>
-    $(function() {
-        $( "#datepicker" ).datepicker({format: 'mm/dd/yyyy'});
 
-    });
+      <!--where the fun of the site should be  I failed at that-->
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({format: 'mm/dd/yyyy'});
 
-//   $(function() {
-//        $( "#timepicker" ).timepicker();
-//    });
-</script>
-</div>
+        });
+    </script>
+</section>
 <!--var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();-->

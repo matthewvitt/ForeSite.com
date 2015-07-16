@@ -1,8 +1,8 @@
 <h1>Signup and find someone to golf with in no time</h1>
-
+<div class="signup">
 <%= form_for :user, url: '/users' do |f| %>
 
-    Name: <%= f.text_field :name %>
+    Name:<p> <%= f.text_field :name %></p>
     Handicap: <%= f.text_field :handicap %>
     Email: <%= f.text_field :email %><br>
     <br>
@@ -10,7 +10,7 @@
     Password Confirmation: <%= f.password_field :password_confirmation %>
     </br>
     </br>
-
+</div>
     <%= f.submit "Get Golfin" %>
 
 <% end %>

@@ -19,12 +19,26 @@
 @import 'bootstrap';
 
 
+#teetime-edit {
+    background-image: url('St.Andrews.jpg')!important;
+    height: 100%;
+    width: 100%;
+}
 
+#teetime-index {
+    background-image: url('pebble-beach.jpg')!important;
+    height: 100%;
+    width: 100%;
+}
 
-
+.backdrop{
+    color: #B00100;
+}
 
 body{
-    background-image: url('pebble-beach.jpg')!important;
+    /*background-image: url('St.Andrews.jpg')!important;*/
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Cinzel', serif !important;
     margin: 60px 10px 10px 10px !important;
 
@@ -60,9 +74,7 @@ body{
     /*margin: 70px auto;*/
 /*}*/
 
-.navbar-header {
-    font-size: 55px;
-}
+
 
 .backdrop {
     font-size: 15px;

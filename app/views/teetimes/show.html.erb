@@ -1,15 +1,26 @@
-<container class="Teetimes">
-  <h3>Players Name: <%= @teetime.user.name %></h3>
-  <h3><%=@teetime.user.name%>'s Contact: <%= @teetime.user.email %></h3>
-  <h3><%=@teetime.user.name%>'s Handicap: <%= @teetime.user.handicap %></h3>
+<section id="teetime-show">
+    <div class="container Teetimes">
+      <h3>Players Name: <%= @teetime.user.name %></h3>
+      <h3><%=@teetime.user.name%>'s Contact: <%= @teetime.user.email %></h3>
+      <h3><%=@teetime.user.name%>'s Handicap: <%= @teetime.user.handicap %></h3>
 
-    <h3><%= @teetime.date %></h3>
-    <h3><%= @teetime.time %></h3>
-    <h3><%= @teetime.course %></h3>
+        <h3><%= @teetime.date %></h3>
+        <h3><%= @teetime.time %></h3>
+        <h3><%= @teetime.course %></h3>
 
-    <%= link_to "Back to listing",teetimes_path %>|
-    <%= link_to "Cancel Teetime", @teetime, method: :delete, data: { confirm: "Do you really want to delete this????"} %>
-  <br>
-  <%= link_to"send an email", teetimes_path %>
-</container>
+        <%= link_to "Back to listing",teetimes_path %>|
+        <%= link_to "Cancel Teetime", @teetime, method: :delete, data: { confirm: "Do you really want to delete this????"} %>
+      <br>
+      <h3> Tell <%=@teetime.user.name%> you want to beat him in golf</h3>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Pick Teetime</button>
+
+      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+           An email has been sent to <%=@teetime.user.name%>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 <!--shows the teetime made-->

@@ -4,28 +4,50 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+body{
+  //background-image: url('St.Andrews.jpg')!important;
 
+}
 .new_teetime{
   //background-image: url('St.Andrews.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container {
+  //background-image: url('pebble-beach.jpg')!important;
+  background-repeat: inherit;
   float: left;
   font-size: 20px;
-  width: 500px;
+  width: auto;
   border: 1px solid green;
   height: auto;
   margin: 70px auto;
+  color: black;
+}
+.cont.x {
+  //background-image: url('pebble-beach.jpg')!important;
+  float: left;
+  font-size: 20px;
+  width: auto;
+  border: 1px solid green;
+  height: auto;
+  margin: 2px auto;
+  color: black;
+  background-color: rgba(0,0,0,0.4);
+
 }
 
+
 .Teetimes {
+
   float: left;
   font-size: 20px;
   width: 450px;
   border: 1px solid green;
   height: auto;
-  margin: 70px auto;
+  margin: 50px auto;
+  padding-left: 30px;
+  padding-bottom: 30px;
   background-color: rgba(0,0,0,0.6);
 }
 h1{
@@ -38,6 +60,25 @@ h3{
 h4{
   color:aliceblue;
 }
+.signup{
+  color: aliceblue;
+}
+p{
+  color: #040404;
+}
+
+
+input, select, textfield{
+  color: #black;
+}
+
+textfield:focus, input:focus {
+  color: black;
+}
+
+
+
+//
 //
 //.container {
 //  border-style: dashed;

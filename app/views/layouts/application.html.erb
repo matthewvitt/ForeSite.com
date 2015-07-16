@@ -16,11 +16,13 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 
 </head>
 <body>
+<div class="container-fluid">
 <div class= "backdrop">
   <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -59,10 +61,9 @@
                   <li><%= link_to "Sign Up", signup_path %></li>
                 <% end %>
               </li>
-
-
+        </li>
       </ul>
-      </li>
+
 
     </div>
 
@@ -91,11 +92,13 @@
 
 
 
+
 <%= yield %>
 
 
 
 
+</div>
 </div>
 </body>
 </html>

@@ -1,30 +1,32 @@
-<h1>CHANGE TEE TIME</h1>
+<section id="teetime-edit">
+    <h1>CHANGE TEE TIME</h1>
 
 
-<%= form_for @teetime do |f| %>
-    <p>
-      <%= f.label :date %>
-      <%= f.text_field :date, id: "datepicker" %>
-      <%= f.label :time %>
-      <%= f.text_field :time, id: "timepicker" %>
-    </p>
+    <%= form_for @teetime do |f| %>
+        <p>
+          <%= f.label :date %>
+          <%= f.text_field :date, id: "datepicker" %>
+          <%= f.label :time %>
+          <%= f.text_field :time %>
+        </p>
 
-    <p>
-      <%= f.label :course %>
-      <%= f.collection_select :course, Teetime::COURSES, :to_s, :to_s,
-                              :include_blank => true%>
-    </p>
-<!--edit field that will change exixting teetime properties-->
+        <p>
+          <%= f.label :course %>
+          <%= f.collection_select :course, Teetime::COURSES, :to_s, :to_s,
+                                  :include_blank => true%>
+        </p>
+    <!--edit field that will change exixting teetime properties-->
 
-    <p>
-      <%= f.submit "Teetime Update" %>
-    </p>
-        <!--update submit will link back to main page through controller-->
-<%end%>
-<%= link_to "Back to listing",teetimes_path %>
+        <p>
+          <%= f.submit "Teetime Update" %>
+        </p>
+            <!--update submit will link back to main page through controller-->
+    <%end%>
+    <%= link_to "Back to listing",teetimes_path %>
 
-<script>
-    $(function() {
-        $( "#datepicker" ).datepicker({ dateFormat: 'mm-dd-yy' });
-    });
-</script>
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'mm/dd/yy' });
+        });
+    </script>
+</section>
