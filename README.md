@@ -11,7 +11,8 @@ Users can post their own future teetimes if they are looking for
 join up with somebody. 
 
 Future improvements will include:
-Searchable teetimes by course or date
+Searchable teetimes by course or date.
+
 User ratings, depending on reliablilty and skill. 
 Chat rooms for last second teetimes. 
 
