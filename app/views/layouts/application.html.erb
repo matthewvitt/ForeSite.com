@@ -9,11 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<<<<<<< HEAD
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
-
-
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -24,136 +19,65 @@
 </head>
 <body>
 <div class="container-fluid">
-<div class= "backdrop">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class= "backdrop">
+    <nav class="navbar navbar-default navbar-fixed-top">
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
 
-      </button>
-      <a class="navbar-brand" href="/">ForeSite</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to  "Make a Teetime", new_teetime_path %></li>
+        </button>
+        <a class="navbar-brand" href="/">ForeSite</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to  "Make a Teetime", new_teetime_path %></li>
 
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span class="caret"></span>
-            <ul class="dropdown-menu" role="menu">
-              <!-- -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span class="caret"></span>
+              <ul class="dropdown-menu" role="menu">
+                <!-- -->
 
 
-              <li>
-                <% if current_user %>
-                    <%= link_to "Log out", logout_path %>
-                <% else %>
-                    <%= link_to "Login", login_path %>
-                <% end %></li>
+                <li>
+                  <% if current_user %>
+                      <%= link_to "Log out", logout_path %>
+                  <% else %>
+                      <%= link_to "Login", login_path %>
+                  <% end %></li>
 
-              <li>
-                <% if current_user %>
+                <li>
+                  <% if current_user %>
 
-                <% else %>
-                  <li><%= link_to "Sign Up", signup_path %></li>
+                  <% else %>
+                    <li><%= link_to "Sign Up", signup_path %></li>
                 <% end %>
-              </li>
+          </li>
+
+
+        </ul>
         </li>
-      </ul>
+
+      </div>
+
+    </nav>
 
 
-    </div>
-
-  </nav>
-
-
-<!--<div id="user_header">-->
-  <!--<% if current_user %>-->
-      <!--Logged in as <%= current_user.name %> <br />-->
-      <!--<%= link_to    "Log Out", logout_path %>-->
-  <!--<% else %>-->
-      <%= link_to "Sign Up", signup_path %><br />
-      <!--<%= link_to "Log In", login_path %>-->
-  <!--<% end %>-->
-
-
-
-  <!--&lt;!&ndash;above puts access credentials throughout site&ndash;&gt;-->
-=======
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script src="https://cdnjs.com/libraries/jquery-timepicker"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <%= csrf_meta_tags %>
-
-  <!--<div class="header">-->
-    <!--<h1 class="text-left">ForeSite</h1>-->
-    <!--<h4 class="text-left"> Find someone to golf with. Where you want, when you want</h4>-->
-  <!--</div>-->
-  <!--<div class="logo_img"></div>-->
-
-</head>
-<body>
-<div class= "backdrop">
-  <nav class="navbar navbar-default">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-
-      </button>
-      <a class="navbar-brand" href="/">ForeSite</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-
-        <li><%= link_to  "Make a Teetime", new_teetime_path %></li>
-
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span class="caret"></span>
-            <ul class="dropdown-menu" role="menu">
-              <!-- -->
-
-
-              <li>
-                <% if current_user %>
-                    <%= link_to "Log out", logout_path %>
-                <% else %>
-                    <%= link_to "Login", login_path %>
-                <% end %></li>
-
-              <li><% if current_user %>
->>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
-
-                <% else %>
-                  <li><%= link_to "Sign Up", signup_path %></li>
-          <% end %></li>
-
-
-      </ul>
-      </li>
-      </ul>
-    </div>
-
-  </nav>
-
-
-  <div id="user_header">
-    <% if current_user %>
-        Logged in as <%= current_user.name %> <br />
-        <%= link_to    "Log Out", logout_path %>
-    <% else %>
+    <!--<div id="user_header">-->
+    <!--<% if current_user %>-->
+        <!--Logged in as <%= current_user.name %> <br />-->
+        <!--<%= link_to    "Log Out", logout_path %>-->
+        <!--<% else %>-->
         <%= link_to "Sign Up", signup_path %><br />
-        <%= link_to "Log In", login_path %>
-    <% end %>
+        <!--<%= link_to "Log In", login_path %>-->
+        <!--<% end %>-->
+
+
+
     <!--&lt;!&ndash;above puts access credentials throughout site&ndash;&gt;-->
 
   </div>
@@ -165,13 +89,7 @@
 
 
 
-<<<<<<< HEAD
-
-
-<%= yield %>
-=======
   <%= yield %>
->>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
 
 
 

@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 gem 'kaminari'
@@ -17,18 +18,11 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'momentjs-rails', '>= 2.8.1'
-
 gem 'bootstrap-datepicker-rails'
 gem 'bootstrap-timepicker-rails'
-gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14'
-<<<<<<< HEAD
 
 
-=======
-gem 'bootstrap-datepicker-rails'
-gem 'bootstrap-timepicker-rails-addon'
->>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -58,16 +52,16 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-    gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.0.0'
 
-    gem 'shoulda-matchers', require: false
+  gem 'shoulda-matchers', require: false
 
-    gem 'capybara'
+  gem 'capybara'
 
-    gem 'factory_girl_rails'
+  gem 'factory_girl_rails'
 
-    #ADD IN simplecov gem
-    gem 'simplecov', :require => false
+  #ADD IN simplecov gem
+  gem 'simplecov', :require => false
 
 
 end

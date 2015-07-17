@@ -4,11 +4,16 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
-<<<<<<< HEAD
-body{
-  //background-image: url('St.Andrews.jpg')!important;
 
+body{
+  background-image: url('St.Andrews.jpg ') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  font-family: 'Cinzel', serif !important;
+  margin: 60px 10px 10px 10px !important;
+  background: aliceblue;
 }
+
 .new_teetime{
   //background-image: url('St.Andrews.jpg') !important;
   background-repeat: no-repeat;
@@ -102,8 +107,10 @@ p {
 .container {
   border-style: dashed;
   text-decoration: underline;
-  margin: absolute;
   padding:2px;
 
 }
->>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
+//
+//.landing {
+//  color: aliceblue;
+//}

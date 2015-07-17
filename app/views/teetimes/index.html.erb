@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<section id="teetime-index">
+<%= stylesheet_link_tag 'teetimes.css.scss', media: 'all', 'data-turbolinks-track' => true %>
 
 <!--all teetimes are listed and making a teetime is a click away-->
 <div class="container">
@@ -26,7 +25,7 @@
 </div>
 
 
-</section>
+
   <!--<hr>-->
 
 
@@ -57,23 +56,3 @@
       <!--</li>-->
 
     <!--</ul>-->
-=======
-
-<p id="TTlink"><%= link_to "Make a teetime", new_teetime_path %></p>
-
-<!--all teetimes are listed and making a teetime is a click away-->
-<div class="container">
-  <% @teetimes.each do |teetime| %>
-      <h2><%= current_user.name %></h2>
-      <h2><%=link_to teetime.date, teetime %></h2>
-      <h2><p><%=teetime.course%></p></h2>
-      <p>
-        <%= link_to "Change Teetime", edit_teetime_path(teetime)%> |
-        <%= link_to "Cancel Teetime", teetimes_path(teetime), method: :delete %>
-
-      </p>
-      <!--still reading these comments?-->
-      <hr />
-      </div>
-  <%end%>
->>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
