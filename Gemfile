@@ -22,8 +22,13 @@ gem 'bootstrap-datepicker-rails'
 gem 'bootstrap-timepicker-rails'
 gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14'
+<<<<<<< HEAD
 
 
+=======
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-timepicker-rails-addon'
+>>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

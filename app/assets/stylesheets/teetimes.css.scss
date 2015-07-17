@@ -4,6 +4,7 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+<<<<<<< HEAD
 body{
   //background-image: url('St.Andrews.jpg')!important;
 
@@ -86,4 +87,23 @@ textfield:focus, input:focus {
 //  margin: absolute;
 //  padding:2px;
 //
-//}
+
+
+#TTlink {
+
+  font-size: 40px;
+}
+
+p {
+  font-style: bold;
+
+}
+
+.container {
+  border-style: dashed;
+  text-decoration: underline;
+  margin: absolute;
+  padding:2px;
+
+}
+>>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365

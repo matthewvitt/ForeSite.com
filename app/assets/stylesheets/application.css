@@ -14,9 +14,10 @@
  *= require_tree .
 
 
-*/
-@import "bootstrap-sprockets";
-@import 'bootstrap';
+
+ */
+
+
 
 
 #teetime-edit {
@@ -48,10 +49,23 @@ body{
     /*content:url('assets/images/hole.jpg');*/
     /*float: right;*/
 /*}*/
-.header {
 
-    height:125px !important;
-    background:green !important;
+
+
+body{
+    font-family: 'Cinzel', serif;
+    /*font-family: 'Cinzel', serif;*/
+    margin:10px;
+    background:aliceblue;
+}
+/*.logo_img {*/
+/*content:url('assets/images/hole.jpg');*/
+/*float: right;*/
+/*}*/
+.header {
+    font-family: 'Cinzel', serif;
+    height:125px;
+    background:green;
     border:1px solid greenyellow;
     width:auto;
     margin:10px auto;
@@ -81,4 +95,5 @@ body{
     margin-right: 3px;
     padding-right: 20px;
 }
+
 

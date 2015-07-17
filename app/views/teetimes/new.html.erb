@@ -1,6 +1,7 @@
 <section id="teetime-new">
 <h1> Make a Teetime</h1>
 
+<<<<<<< HEAD
 
 <h3>When do you want to play?</h3>
 
@@ -10,6 +11,22 @@
         <%= f.label :time %>
         <%= f.text_field :time %>
 <br>
+=======
+
+<h3>Please write the date and time you want to find a golf partner</h3>
+
+
+
+<body>
+<%= form_for @teetime do |f|%>
+    <%= f.label :date %>
+    <%= f.text_field :date, id: "datepicker" %>
+
+    <br>
+
+
+
+>>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
 
 
     <h3> Participating Courses</h3>
@@ -25,6 +42,7 @@
     </p>
       <%= link_to "Back to listing",teetimes_path %>
 
+<<<<<<< HEAD
 <%end%>
 
       <!--where the fun of the site should be  I failed at that-->
@@ -36,3 +54,14 @@
     </script>
 </section>
 <!--var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();-->
+=======
+
+
+    <!--where the fun of the site should be  I failed at that-->
+<%end%>
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker({ dateFormat: 'mm-dd-yy' });
+    });
+</script>
+>>>>>>> edb4c015c9d7cc736d302fc4fc1cfb4ac3a32365
